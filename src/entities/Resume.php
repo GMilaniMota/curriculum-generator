@@ -4,9 +4,9 @@ enum Sex {
 }
 
 class Resume {
-    private string $nome;
-    private string $email;
-    private int $idade;
+    public string $nome;
+    public string $email;
+    public int $idade;
 
 
     public function __construct() {
