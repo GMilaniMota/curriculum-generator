@@ -10,5 +10,48 @@
 
     <h1>Gerador de Currículos</h1>
 
+    <div class="name">
+        <form>
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name">
+        </form>
+    </div>
+    <div class="idade">
+        <form>
+            <label for="idade">Idade: </label>
+            <input type="number" name="idade" id="idade">
+        </form>
+    </div>
+    <div class="sexo">
+        <form>
+            <label for="sexo">Sexo: </label>
+            <select name="sexo" id="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="binario">Nao binario</option>
+                <option value="hetero">Hetero top</option>
+                <option value="careca">Careca</option>
+                <option value="calvo">calvo</option>
+            </select>
+        </form>
+    </div>
+    <div class="endereco">
+        <form>
+            <label for="endereco">Endereço: </label>
+            <input type="text" name="endereco" id="endereco">
+        </form>
+    </div>
+    <div class="telefone">
+        <form>
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </form>
+    </div>
+    <div class="email">
+        <form>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email">
+        </form>
+    </div>
 </body>
 </html>
