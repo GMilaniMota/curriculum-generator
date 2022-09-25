@@ -53,5 +53,18 @@
             <input type="email" id="email" name="email">
         </form>
     </div>
+    <div class="linkedin">
+        <form>
+            <label for="linkedin">Linkedin: </label>
+            <input type="linkedin" id="linkedin" name="linkedin">
+        </form>
+    </div>
+    <div class="git-hub">
+        <form>
+            <label for="git-hub">Git-Hub: </label>
+            <input type="git-hub" id="git-hub" name="git-hub">
+        </form>
+    </div>
+
 </body>
 </html>
