@@ -41,6 +41,24 @@
             <input type="text" name="endereco" id="endereco">
         </form>
     </div>
+    <div class="país">
+        <form>
+            <label for="país">País: </label>
+            <input type="país" name="país" id="país">
+        </form>
+    </div>
+    <div class="estado">
+        <form>
+            <label for="estado">Estado: </label>
+            <input type="estado" name="estado" id="estado">
+        </form>
+    </div>
+    <div class="cidade">
+        <form>
+            <label for="cidade">Cidade: </label>
+            <input type="cidade" name="cidade" id="cidade">
+        </form>
+    </div>
     <div class="telefone">
         <form>
             <label for="telefone">Telefone: </label>
@@ -53,5 +71,18 @@
             <input type="email" id="email" name="email">
         </form>
     </div>
+    <div class="linkedin">
+        <form>
+            <label for="linkedin">Linkedin: </label>
+            <input type="linkedin" id="linkedin" name="linkedin">
+        </form>
+    </div>
+    <div class="git-hub">
+        <form>
+            <label for="git-hub">Git-Hub: </label>
+            <input type="git-hub" id="git-hub" name="git-hub">
+        </form>
+    </div>
+
 </body>
 </html>
