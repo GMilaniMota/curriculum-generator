@@ -7,7 +7,7 @@
     <title>Gerador de Currículos</title>
 </head>
 <body>
-
+    
     <h1>Gerador de Currículos</h1>
 
     <div class="name">
