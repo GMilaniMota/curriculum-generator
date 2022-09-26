@@ -9,7 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="src/js/index.js"></script>
-    <link rel="stylesheet" href="src/css/index.css">
+    <link href="src/css/index.css" rel="stylesheet" >
+    <link rel="icon" type="imagem/png" href="https://icons.iconarchive.com/icons/graphics-vibe/developer/16/php-icon.png" />
     <title>Gerador de Currículos</title>
 </head>
 <body>
