@@ -7,10 +7,8 @@ $(document).ready(function(){
         field.mask(SPMaskBehavior.apply({}, arguments), options);
         }
     };
-
     $('#telInput').mask(SPMaskBehavior, spOptions);
     $('#cepInput').mask('00000-000');
-
     $('input[id*="currOcupInput"]').on('click', function() {
         let endDateInput = $(this).closest('input');
         console.log(endDateInput);
@@ -22,12 +20,8 @@ $(document).ready(function(){
             $(endDateInput).prop('disabled', false);
         }
     });
-
-    $(document)
-
     let expElemIds = 2;
     let acadElemIds = 2;
-    
     $('#btnAddExp').click(function() {
         let newExpSec = `
             <section class="professionalInfoSection">
@@ -70,7 +64,6 @@ $(document).ready(function(){
         
         expElemIds += 1;
     });
-    
     $('#btnAddExpAcad').click(function() {
         let newAcadSec = `
         <section class="academicInfoSection">

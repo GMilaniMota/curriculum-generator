@@ -21,7 +21,7 @@
         </div>
 
         <div class="row">
-            <form action="" method="post">
+            <form action="src/controllers/ResumeController.php?action=index" method="post">
                 
                 <!--INFORMAÇÕES BÁSICAS CARD-->
                 <div class="card">
@@ -32,7 +32,7 @@
                         <div class="row mb-3">
                             <div class="col-4">
                                 <label for="nameInput" class="form-label">Nome:</label>
-                                <input type="text" class="form-control" id="nameInput" placeholder="João da Silva">
+                                <input type="text" class="form-control" name="nome" id="nameInput" placeholder="João da Silva">
                             </div>
                             <div class="col-4">
                                 <label for="emailInput" class="form-label">Email:</label>

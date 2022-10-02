@@ -1,16 +1,14 @@
 <?php 
+namespace Entities;
 enum Sex {
 
 }
 
 class Resume {
-    private string $nome;
-    private string $email;
-    private int $idade;
-
-
-    public function __construct() {
-        
-    }
+    public string $nome;
+    public string $email;
+    public string $dataNasc;
+    public string $telefone;
+    public string $sobre;
 
 }
