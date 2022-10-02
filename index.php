@@ -87,38 +87,40 @@
                         Informações Profissionais
                     </div>
                     <div class="card-body">
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <label for="occupationInput" class="form-label">Cargo:</label>
-                                <input type="text" class="form-control" id="occupationInput">
+                        <section class="professionalInfoSection">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="occupationInput" class="form-label">Cargo:</label>
+                                    <input type="text" class="form-control" id="occupationInput">
+                                </div>
+                                <div class="col-6">
+                                    <label for="companyInput" class="form-label">Empresa:</label>
+                                    <input type="text" class="form-control" id="companyInput">
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <label for="companyInput" class="form-label">Empresa:</label>
-                                <input type="text" class="form-control" id="companyInput">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="startDateInput" class="form-label">Data Inicial:</label>
+                                    <input type="date" class="form-control" id="startDateInput">
+                                </div>
+                                <div class="col-6">
+                                    <label for="endDateInput" class="form-label">Data Final:</label>
+                                    <input type="date" class="form-control" name="endDateInput">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <label for="startDateInput" class="form-label">Data Inicial:</label>
-                                <input type="date" class="form-control" id="startDateInput">
+                            <div class="row mb-3 ms-2">
+                                <div class="col-12 form-check">
+                                    <input type="checkbox" class="form-check-input" value="" id="currOcupInput" name="currOcupInput">
+                                    <label for="currOcupInput" class="form-check-label">Este é meu cargo atual</label>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <label for="endDateInput" class="form-label">Data Final:</label>
-                                <input type="date" class="form-control" id="endDateInput">
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <label for="attrInput" class="form-label">Atribuições:</label>
+                                    <textarea class="form-control" id="attrInput" rows="3" placeholder="..."></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-3 ms-2">
-                            <div class="col-12 form-check">
-                                <input type="checkbox" class="form-check-input" value="" id="currOcupInput">
-                                <label for="currOcupInput" class="form-check-label">Este é meu cargo atual</label>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-12">
-                                <label for="cepInput" class="form-label">Atribuições:</label>
-                                <textarea class="form-control" id="cepInput" rows="3" placeholder="..."></textarea>
-                            </div>
-                        </div>
+                        </section>
                         <div class="row">
                             <div class="col-12">
                                 <input id="btnAddExp" class="btn btn-secondary" type="button" value="Adicionar outra experiência">
@@ -134,35 +136,37 @@
                         Informações Acadêmicas
                     </div>
                     <div class="card-body">
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <label for="gradInput" class="form-label">Graduação:</label>
-                                <input type="text" class="form-control" id="gradInput">
+                        <section class="academicInfoSection">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="gradInput" class="form-label">Graduação:</label>
+                                    <input type="text" class="form-control" id="gradInput">
+                                </div>
+                                <div class="col-6">
+                                    <label for="uniInput" class="form-label">Instituição:</label>
+                                    <input type="text" class="form-control" id="uniInput">
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <label for="uniInput" class="form-label">Instituição:</label>
-                                <input type="text" class="form-control" id="uniInput">
+                            <div class="row mb-3">
+                                <div class="col-4">
+                                    <label for="levelInput" class="form-label">Nível:</label>
+                                    <select class="form-select" id="levelInput">
+                                        <option selected value="1">Selecione...</option>
+                                        <option value="2">Fundamental</option>
+                                        <option value="3">Médio</option>
+                                        <option value="4">Superior</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="startGradDateInput" class="form-label">Data Inicial:</label>
+                                    <input type="date" class="form-control" id="startGradDateInput">
+                                </div>
+                                <div class="col-4">
+                                    <label for="endGradDateInput" class="form-label">Data Final:</label>
+                                    <input type="date" class="form-control" id="endGradDateInput">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-4">
-                                <label for="levelInput" class="form-label">Nível:</label>
-                                <select class="form-select" id="levelInput">
-                                    <option selected value="1">Selecione...</option>
-                                    <option value="2">Fundamental</option>
-                                    <option value="3">Médio</option>
-                                    <option value="4">Superior</option>
-                                </select>
-                            </div>
-                            <div class="col-4">
-                                <label for="startGradDateInput" class="form-label">Data Inicial:</label>
-                                <input type="date" class="form-control" id="startGradDateInput">
-                            </div>
-                            <div class="col-4">
-                                <label for="endGradDateInput" class="form-label">Data Final:</label>
-                                <input type="date" class="form-control" id="endGradDateInput">
-                            </div>
-                        </div>
+                        </section>
                         <div class="row">
                             <div class="col-12">
                                 <input id="btnAddExpAcad" class="btn btn-secondary" type="button" value="Adicionar outra formação">
@@ -172,7 +176,7 @@
                 </div>
                 <!---------------------------->
 
-                <input id="btnSubmit" class="btn btn-success mt-3 mb-3" type="submit" value="Gerar Crurículo">
+                <input id="btnSubmit" class="btn btn-success mt-3 mb-3" type="submit" value="Gerar Currículo">
 
             </form>
         </div>
