@@ -1,4 +1,5 @@
 <?php 
+namespace Entities;
 class Address {
     public string $endereco;
     public string $complemento;

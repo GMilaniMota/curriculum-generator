@@ -36,11 +36,11 @@
                             </div>
                             <div class="col-4">
                                 <label for="emailInput" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="emailInput" placeholder="exemplo@dominio.com">
+                                <input type="email" class="form-control" name="email" id="emailInput" placeholder="exemplo@dominio.com">
                             </div>
                             <div class="col-2">
                                 <label for="dateInput" class="form-label">Data de Nascimento:</label>
-                                <input type="date" class="form-control" id="dateInput">
+                                <input type="date" class="form-control" name="data_nascimento" id="dateInput">
                             </div>
                             <div class="col-2">
                                 <label for="telInput" class="form-label">Telefone:</label>
