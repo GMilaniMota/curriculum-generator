@@ -8,7 +8,9 @@ class Experience {
     public bool $cargo_atual;
     public string $atribuicoes;
 
-    public function __construct(){
-        
+    public function __construct($data){
+        foreach($data as $key => $field){
+            $this->$key = $field;
+        }
     }
 }

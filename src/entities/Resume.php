@@ -1,6 +1,7 @@
 <?php 
 namespace Entities;
-
+require('../entities/Experience.php');
+require('../entities/Graduation.php');
 
 enum Sex {
 
@@ -13,12 +14,25 @@ class Resume {
     public string $telefone;
     public string $sobre;
     public Address $endereco;
-    public array $exeperiencias;
-    public array $graduacoes;
+    public array $exeperiencias = [];
+    public array $graduacoes = [];
 
     public function __construct($data){
         foreach($data as $key => $field) {
-            $this->{$key} = $field;
+            if ($key == "graducao") {
+                foreach($field as $graduacao) {
+                    $graduacaoClass = new Graduation($graduacao);
+                    array_push($this->graduacoes, $graduacaoClass);
+                }
+            }
+            if ($key == "ocupacao") {
+                foreach($field as $ocupacao) {
+                    $ocupacaoClass = new Experience($ocupacao);
+                    array_push($this->exeperiencias, $ocupacaoClass);
+                }
+            } else {
+                $this->{$key} = $field; 
+            }
         }
     }
 
