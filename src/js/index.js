@@ -22,7 +22,7 @@ $(document).ready(function(){
         }
     });
 
-    let expElemIds = 2;
+    let expElemIds = 1;
 
     $('#btnAddExp').click(function() {
         let newExpSec = `
@@ -30,33 +30,33 @@ $(document).ready(function(){
                 <div class="row mb-3">
                     <div class="col-6">
                         <label for="occupationInput${expElemIds}" class="form-label">Cargo:</label>
-                        <input type="text" class="form-control" name="occupationInput${expElemIds}" id="occupationInput${expElemIds}">
+                        <input type="text" class="form-control" name="ocupacao[${expElemIds}][cargo]" id="occupationInput${expElemIds}">
                     </div>
                     <div class="col-6">
                         <label for="companyInput${expElemIds}" class="form-label">Empresa:</label>
-                        <input type="text" class="form-control" name="companyInput${expElemIds}" id="companyInput${expElemIds}">
+                        <input type="text" class="form-control" name="ocupacao[${expElemIds}][empresa]" id="companyInput${expElemIds}">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-6">
                         <label for="startDateInput${expElemIds}" class="form-label">Data Inicial:</label>
-                        <input type="date" class="form-control" name="startDateInput${expElemIds}" id="startDateInput${expElemIds}">
+                        <input type="date" class="form-control" name="ocupacao[${expElemIds}][datainicial]" id="startDateInput${expElemIds}">
                     </div>
                     <div class="col-6">
                         <label for="endDateInput${expElemIds}" class="form-label">Data Final:</label>
-                        <input type="date" class="form-control" name="endDateInput${expElemIds}" id="endDateInput${expElemIds}">
+                        <input type="date" class="form-control" name="ocupacao[${expElemIds}][datafinal]" id="endDateInput${expElemIds}">
                     </div>
                 </div>
                 <div class="row mb-3 ms-2">
                     <div class="col-12 form-check">
-                        <input type="checkbox" class="form-check-input" value="" id="currOcupInput${expElemIds}" name="currOcupInput${expElemIds}">
+                        <input type="checkbox" class="form-check-input" value="" id="currOcupInput${expElemIds}" name="ocupacao[${expElemIds}][cargoatual]">
                         <label for="currOcupInput${expElemIds}" class="form-check-label">Este é meu cargo atual</label>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-12">
                         <label for="attrInput${expElemIds}" class="form-label">Atribuições:</label>
-                        <textarea class="form-control" name="attrInput${expElemIds}" id="attrInput${expElemIds}" rows="3" placeholder="..."></textarea>
+                        <textarea class="form-control" name="ocupacao[${expElemIds}][atribuicao]" id="attrInput${expElemIds}" rows="3" placeholder="..."></textarea>
                     </div>
                 </div>
             </section>
@@ -67,7 +67,7 @@ $(document).ready(function(){
         expElemIds += 1;
     });
 
-    let acadElemIds = 2;
+    let acadElemIds = 1;
 
     $('#btnAddExpAcad').click(function() {
         let newAcadSec = `
@@ -75,17 +75,17 @@ $(document).ready(function(){
                 <div class="row mb-3">
                     <div class="col-6">
                         <label for="gradInput${acadElemIds}" class="form-label">Graduação:</label>
-                        <input type="text" class="form-control" name="gradInput${acadElemIds}" id="gradInput${acadElemIds}">
+                        <input type="text" class="form-control" name="graduacao[${acadElemIds}][nome]" id="gradInput${acadElemIds}">
                     </div>
                     <div class="col-6">
                         <label for="uniInput${acadElemIds}" class="form-label">Instituição:</label>
-                        <input type="text" class="form-control" name="uniInput${acadElemIds}" id="uniInput${acadElemIds}">
+                        <input type="text" class="form-control" name="graduacao[${acadElemIds}][instituicao]" id="uniInput${acadElemIds}">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-4">
                         <label for="levelInput${acadElemIds}" class="form-label">Nível:</label>
-                        <select class="form-select" name="levelInput${acadElemIds}" id="levelInput${acadElemIds}">
+                        <select class="form-select" name="graduacao[${acadElemIds}][nivel]" id="levelInput${acadElemIds}">
                             <option selected value="1">Selecione...</option>
                             <option value="2">Fundamental</option>
                             <option value="3">Médio</option>
@@ -94,11 +94,11 @@ $(document).ready(function(){
                     </div>
                     <div class="col-4">
                         <label for="startGradDateInput${acadElemIds}" class="form-label">Data Inicial:</label>
-                        <input type="date" class="form-control" name="startGradDateInput${acadElemIds}" id="startGradDateInput${acadElemIds}">
+                        <input type="date" class="form-control" name="graduacao[${acadElemIds}][datainicial]" id="startGradDateInput${acadElemIds}">
                     </div>
                     <div class="col-4">
                         <label for="endGradDateInput${acadElemIds}" class="form-label">Data Final:</label>
-                        <input type="date" class="form-control" name="endGradDateInput${acadElemIds}" id="endGradDateInput${acadElemIds}">
+                        <input type="date" class="form-control" name="graduacao[${acadElemIds}][datafinal]" id="endGradDateInput${acadElemIds}">
                     </div>
                 </div>
             </section>

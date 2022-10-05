@@ -150,7 +150,7 @@
                             <div class="row mb-3">
                                 <div class="col-4">
                                     <label for="levelInput" class="form-label">Nível:</label>
-                                    <select class="form-select" name="levelInput" id="levelInput">
+                                    <select class="form-select" name="graduacao[0][nivel]" id="levelInput">
                                         <option selected value="1">Selecione...</option>
                                         <option value="2">Fundamental</option>
                                         <option value="3">Médio</option>
