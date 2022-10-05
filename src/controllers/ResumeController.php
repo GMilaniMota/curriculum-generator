@@ -5,4 +5,3 @@ use Entities\Resume;
 
 $data = $_POST;
 $resume = new Resume($data);
-var_dump($resume);
