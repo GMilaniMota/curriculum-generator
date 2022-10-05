@@ -91,33 +91,33 @@
                             <div class="row mb-3">
                                 <div class="col-6">
                                     <label for="occupationInput" class="form-label">Cargo:</label>
-                                    <input type="text" class="form-control" name="occupationInput" id="occupationInput">
+                                    <input type="text" class="form-control" name="ocupacao[0][cargo]" id="occupationInput">
                                 </div>
                                 <div class="col-6">
                                     <label for="companyInput" class="form-label">Empresa:</label>
-                                    <input type="text" class="form-control" name="companyInput" id="companyInput">
+                                    <input type="text" class="form-control" name="ocupacao[0][empresa]" id="companyInput">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-6">
                                     <label for="startDateInput" class="form-label">Data Inicial:</label>
-                                    <input type="date" class="form-control" name="startDateInput" id="startDateInput">
+                                    <input type="date" class="form-control" name="ocupacao[0][datainicial]" id="startDateInput">
                                 </div>
                                 <div class="col-6">
                                     <label for="endDateInput" class="form-label">Data Final:</label>
-                                    <input type="date" class="form-control" name="endDateInput" id="endDateInput">
+                                    <input type="date" class="form-control" name="ocupacao[0][datafinal]" id="endDateInput">
                                 </div>
                             </div>
                             <div class="row mb-3 ms-2">
                                 <div class="col-12 form-check">
-                                    <input type="checkbox" class="form-check-input" value="" id="currOcupInput" name="currOcupInput">
+                                    <input type="checkbox" class="form-check-input" value="" id="currOcupInput" name="ocupacao[0][cargoatual]">
                                     <label for="currOcupInput" class="form-check-label">Este é meu cargo atual</label>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-12">
                                     <label for="attrInput" class="form-label">Atribuições:</label>
-                                    <textarea class="form-control" name="attrInput" id="attrInput" rows="3" placeholder="..."></textarea>
+                                    <textarea class="form-control" name="ocupacao[0][atribuicao]" id="attrInput" rows="3" placeholder="..."></textarea>
                                 </div>
                             </div>
                         </section>
@@ -140,11 +140,11 @@
                             <div class="row mb-3">
                                 <div class="col-6">
                                     <label for="gradInput" class="form-label">Graduação:</label>
-                                    <input type="text" class="form-control" name="gradInput" id="gradInput">
+                                    <input type="text" class="form-control" name="graduacao[0][nome]" id="gradInput">
                                 </div>
                                 <div class="col-6">
                                     <label for="uniInput" class="form-label">Instituição:</label>
-                                    <input type="text" class="form-control" name="uniInput" id="uniInput">
+                                    <input type="text" class="form-control" name="graduacao[0][instituicao]" id="uniInput">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -159,11 +159,11 @@
                                 </div>
                                 <div class="col-4">
                                     <label for="startGradDateInput" class="form-label">Data Inicial:</label>
-                                    <input type="date" class="form-control" name="startGradDateInput" id="startGradDateInput">
+                                    <input type="date" class="form-control" name="graduacao[0][datainicial]" id="startGradDateInput">
                                 </div>
                                 <div class="col-4">
                                     <label for="endGradDateInput" class="form-label">Data Final:</label>
-                                    <input type="date" class="form-control" name="endGradDateInput" id="endGradDateInput">
+                                    <input type="date" class="form-control" name="graduacao[0][datafinal]" id="endGradDateInput">
                                 </div>
                             </div>
                         </section>
