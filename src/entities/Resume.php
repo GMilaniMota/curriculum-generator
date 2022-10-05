@@ -19,13 +19,13 @@ class Resume {
 
     public function __construct($data){
         foreach($data as $key => $field) {
-            if ($key == "graducao") {
+            if (str_contains($key, 'graduacao')) {
                 foreach($field as $graduacao) {
                     $graduacaoClass = new Graduation($graduacao);
                     array_push($this->graduacoes, $graduacaoClass);
                 }
             }
-            if ($key == "ocupacao") {
+            if (str_contains($key, 'ocupacao')) {
                 foreach($field as $ocupacao) {
                     $ocupacaoClass = new Experience($ocupacao);
                     array_push($this->exeperiencias, $ocupacaoClass);

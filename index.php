@@ -32,11 +32,11 @@
                         <div class="row mb-3">
                             <div class="col-4">
                                 <label for="nameInput" class="form-label">Nome:</label>
-                                <input type="text" class="form-control" name="nameInput" id="nameInput" placeholder="João da Silva">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="João da Silva">
                             </div>
                             <div class="col-4">
                                 <label for="emailInput" class="form-label">Email:</label>
-                                <input type="email" class="form-control" name="emailInput" id="emailInput" placeholder="exemplo@dominio.com">
+                                <input type="email" class="form-control" name="email" id="emailInput" placeholder="exemplo@dominio.com">
                             </div>
                             <div class="col-2">
                                 <label for="dateInput" class="form-label">Data de Nascimento:</label>
@@ -44,7 +44,7 @@
                             </div>
                             <div class="col-2">
                                 <label for="telInput" class="form-label">Telefone:</label>
-                                <input type="text" class="form-control" maxlenght="15" name="telInput" id="telInput" placeholder="(xx) xxxxx-xxxx">
+                                <input type="text" class="form-control" maxlenght="15" name="telefone" id="telInput" placeholder="(xx) xxxxx-xxxx">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -74,7 +74,7 @@
                         <div class="row mb-3">
                             <div class="col-12">
                                 <label for="aboutInput" class="form-label">Sobre você:</label>
-                                <textarea class="form-control" name="aboutInput" id="aboutInput" rows="3" placeholder="..."></textarea>
+                                <textarea class="form-control" name="sobre" id="aboutInput" rows="3" placeholder="..."></textarea>
                             </div>
                         </div>
                     </div>
@@ -101,11 +101,11 @@
                             <div class="row mb-3">
                                 <div class="col-6">
                                     <label for="startDateInput" class="form-label">Data Inicial:</label>
-                                    <input type="date" class="form-control" name="ocupacao[0][datainicial]" id="startDateInput">
+                                    <input type="date" class="form-control" name="ocupacao[0][data_inicial]" id="startDateInput">
                                 </div>
                                 <div class="col-6">
                                     <label for="endDateInput" class="form-label">Data Final:</label>
-                                    <input type="date" class="form-control" name="ocupacao[0][datafinal]" id="endDateInput">
+                                    <input type="date" class="form-control" name="ocupacao[0][data_final]" id="endDateInput">
                                 </div>
                             </div>
                             <div class="row mb-3 ms-2">
@@ -159,11 +159,11 @@
                                 </div>
                                 <div class="col-4">
                                     <label for="startGradDateInput" class="form-label">Data Inicial:</label>
-                                    <input type="date" class="form-control" name="graduacao[0][datainicial]" id="startGradDateInput">
+                                    <input type="date" class="form-control" name="graduacao[0][data_inicial]" id="startGradDateInput">
                                 </div>
                                 <div class="col-4">
                                     <label for="endGradDateInput" class="form-label">Data Final:</label>
-                                    <input type="date" class="form-control" name="graduacao[0][datafinal]" id="endGradDateInput">
+                                    <input type="date" class="form-control" name="graduacao[0][data_final]" id="endGradDateInput">
                                 </div>
                             </div>
                         </section>

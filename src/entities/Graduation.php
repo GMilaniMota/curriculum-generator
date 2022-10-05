@@ -1,7 +1,7 @@
 <?php
 namespace Entities;
 class Graduation {
-    public string $graducao;
+    public string $nome;
     public string $intituicao;
     public string $nivel; 
     public string $data_inicial;
