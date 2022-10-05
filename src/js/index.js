@@ -9,6 +9,7 @@ $(document).ready(function(){
     };
     $('#telInput').mask(SPMaskBehavior, spOptions);
     $('#cepInput').mask('00000-000');
+
     $('input[id*="currOcupInput"]').on('click', function() {
         let endDateInput = $(this).closest('input');
         console.log(endDateInput);
@@ -20,29 +21,30 @@ $(document).ready(function(){
             $(endDateInput).prop('disabled', false);
         }
     });
+
     let expElemIds = 2;
-    let acadElemIds = 2;
+
     $('#btnAddExp').click(function() {
         let newExpSec = `
             <section class="professionalInfoSection">
                 <div class="row mb-3">
                     <div class="col-6">
                         <label for="occupationInput${expElemIds}" class="form-label">Cargo:</label>
-                        <input type="text" class="form-control" id="occupationInput${expElemIds}">
+                        <input type="text" class="form-control" name="occupationInput${expElemIds}" id="occupationInput${expElemIds}">
                     </div>
                     <div class="col-6">
                         <label for="companyInput${expElemIds}" class="form-label">Empresa:</label>
-                        <input type="text" class="form-control" id="companyInput${expElemIds}">
+                        <input type="text" class="form-control" name="companyInput${expElemIds}" id="companyInput${expElemIds}">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-6">
                         <label for="startDateInput${expElemIds}" class="form-label">Data Inicial:</label>
-                        <input type="date" class="form-control" id="startDateInput${expElemIds}">
+                        <input type="date" class="form-control" name="startDateInput${expElemIds}" id="startDateInput${expElemIds}">
                     </div>
                     <div class="col-6">
                         <label for="endDateInput${expElemIds}" class="form-label">Data Final:</label>
-                        <input type="date" class="form-control" name="endDateInput${expElemIds}">
+                        <input type="date" class="form-control" name="endDateInput${expElemIds}" id="endDateInput${expElemIds}">
                     </div>
                 </div>
                 <div class="row mb-3 ms-2">
@@ -54,7 +56,7 @@ $(document).ready(function(){
                 <div class="row mb-3">
                     <div class="col-12">
                         <label for="attrInput${expElemIds}" class="form-label">Atribuições:</label>
-                        <textarea class="form-control" id="attrInput${expElemIds}" rows="3" placeholder="..."></textarea>
+                        <textarea class="form-control" name="attrInput${expElemIds}" id="attrInput${expElemIds}" rows="3" placeholder="..."></textarea>
                     </div>
                 </div>
             </section>
@@ -64,39 +66,42 @@ $(document).ready(function(){
         
         expElemIds += 1;
     });
+
+    let acadElemIds = 2;
+
     $('#btnAddExpAcad').click(function() {
         let newAcadSec = `
-        <section class="academicInfoSection">
-            <div class="row mb-3">
-                <div class="col-6">
-                    <label for="gradInput${acadElemIds}" class="form-label">Graduação:</label>
-                    <input type="text" class="form-control" id="gradInput${acadElemIds}">
+            <section class="academicInfoSection">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label for="gradInput${acadElemIds}" class="form-label">Graduação:</label>
+                        <input type="text" class="form-control" name="gradInput${acadElemIds}" id="gradInput${acadElemIds}">
+                    </div>
+                    <div class="col-6">
+                        <label for="uniInput${acadElemIds}" class="form-label">Instituição:</label>
+                        <input type="text" class="form-control" name="uniInput${acadElemIds}" id="uniInput${acadElemIds}">
+                    </div>
                 </div>
-                <div class="col-6">
-                    <label for="uniInput${acadElemIds}" class="form-label">Instituição:</label>
-                    <input type="text" class="form-control" id="uniInput${acadElemIds}">
+                <div class="row mb-3">
+                    <div class="col-4">
+                        <label for="levelInput${acadElemIds}" class="form-label">Nível:</label>
+                        <select class="form-select" name="levelInput${acadElemIds}" id="levelInput${acadElemIds}">
+                            <option selected value="1">Selecione...</option>
+                            <option value="2">Fundamental</option>
+                            <option value="3">Médio</option>
+                            <option value="4">Superior</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="startGradDateInput${acadElemIds}" class="form-label">Data Inicial:</label>
+                        <input type="date" class="form-control" name="startGradDateInput${acadElemIds}" id="startGradDateInput${acadElemIds}">
+                    </div>
+                    <div class="col-4">
+                        <label for="endGradDateInput${acadElemIds}" class="form-label">Data Final:</label>
+                        <input type="date" class="form-control" name="endGradDateInput${acadElemIds}" id="endGradDateInput${acadElemIds}">
+                    </div>
                 </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-4">
-                    <label for="levelInput${acadElemIds}" class="form-label">Nível:</label>
-                    <select class="form-select" id="levelInput${acadElemIds}">
-                        <option selected value="1">Selecione...</option>
-                        <option value="2">Fundamental</option>
-                        <option value="3">Médio</option>
-                        <option value="4">Superior</option>
-                    </select>
-                </div>
-                <div class="col-4">
-                    <label for="startGradDateInput${acadElemIds}" class="form-label">Data Inicial:</label>
-                    <input type="date" class="form-control" id="startGradDateInput${acadElemIds}">
-                </div>
-                <div class="col-4">
-                    <label for="endGradDateInput${acadElemIds}" class="form-label">Data Final:</label>
-                    <input type="date" class="form-control" id="endGradDateInput${acadElemIds}">
-                </div>
-            </div>
-        </section>
+            </section>
         `;
 
         $(newAcadSec).insertAfter('.academicInfoSection:last');

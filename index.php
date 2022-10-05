@@ -32,49 +32,49 @@
                         <div class="row mb-3">
                             <div class="col-4">
                                 <label for="nameInput" class="form-label">Nome:</label>
-                                <input type="text" class="form-control" name="nome" id="nameInput" placeholder="João da Silva">
+                                <input type="text" class="form-control" name="nameInput" id="nameInput" placeholder="João da Silva">
                             </div>
                             <div class="col-4">
                                 <label for="emailInput" class="form-label">Email:</label>
-                                <input type="email" class="form-control" name="email" id="emailInput" placeholder="exemplo@dominio.com">
+                                <input type="email" class="form-control" name="emailInput" id="emailInput" placeholder="exemplo@dominio.com">
                             </div>
                             <div class="col-2">
                                 <label for="dateInput" class="form-label">Data de Nascimento:</label>
-                                <input type="date" class="form-control" name="data_nascimento" id="dateInput">
+                                <input type="date" class="form-control" name="dateInput" id="dateInput">
                             </div>
                             <div class="col-2">
                                 <label for="telInput" class="form-label">Telefone:</label>
-                                <input type="text" class="form-control" maxlenght="15" id="telInput" placeholder="(xx) xxxxx-xxxx">
+                                <input type="text" class="form-control" maxlenght="15" name="telInput" id="telInput" placeholder="(xx) xxxxx-xxxx">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-5">
                                 <label for="addressInput" class="form-label">Endereço:</label>
-                                <input type="text" class="form-control" id="addressInput" placeholder="Rua das Flores">
+                                <input type="text" class="form-control" name="addressInput" id="addressInput" placeholder="Rua das Flores">
                             </div>
                             <div class="col-4">
-                                <label for="addressInput" class="form-label">Complemento:</label>
-                                <input type="text" class="form-control" id="addressInput">
+                                <label for="adress2Input" class="form-label">Complemento:</label>
+                                <input type="text" class="form-control" name="adress2Input" id="adress2Input">
                             </div>
                             <div class="col-1">
                                 <label for="numberInput" class="form-label">Número:</label>
-                                <input type="text" class="form-control" id="numberInput" maxlength="4" placeholder="1234">
+                                <input type="text" class="form-control" name="numberInput" id="numberInput" maxlength="4" placeholder="1234">
                             </div>
                             <div class="col-2">
                                 <label for="cepInput" class="form-label">CEP:</label>
-                                <input type="text" class="form-control" id="cepInput" maxlength="8" placeholder="12345-678">
+                                <input type="text" class="form-control" name="cepInput" id="cepInput" maxlength="8" placeholder="12345-678">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-12">
                                 <label for="picInput" class="form-label">Adicione uma foto:</label>
-                                <input class="form-control" type="file" id="picInput">
+                                <input class="form-control" type="file" name="picInput" id="picInput">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-12">
                                 <label for="aboutInput" class="form-label">Sobre você:</label>
-                                <textarea class="form-control" id="aboutInput" rows="3" placeholder="..."></textarea>
+                                <textarea class="form-control" name="aboutInput" id="aboutInput" rows="3" placeholder="..."></textarea>
                             </div>
                         </div>
                     </div>
@@ -91,21 +91,21 @@
                             <div class="row mb-3">
                                 <div class="col-6">
                                     <label for="occupationInput" class="form-label">Cargo:</label>
-                                    <input type="text" class="form-control" id="occupationInput">
+                                    <input type="text" class="form-control" name="occupationInput" id="occupationInput">
                                 </div>
                                 <div class="col-6">
                                     <label for="companyInput" class="form-label">Empresa:</label>
-                                    <input type="text" class="form-control" id="companyInput">
+                                    <input type="text" class="form-control" name="companyInput" id="companyInput">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-6">
                                     <label for="startDateInput" class="form-label">Data Inicial:</label>
-                                    <input type="date" class="form-control" id="startDateInput">
+                                    <input type="date" class="form-control" name="startDateInput" id="startDateInput">
                                 </div>
                                 <div class="col-6">
                                     <label for="endDateInput" class="form-label">Data Final:</label>
-                                    <input type="date" class="form-control" name="endDateInput">
+                                    <input type="date" class="form-control" name="endDateInput" id="endDateInput">
                                 </div>
                             </div>
                             <div class="row mb-3 ms-2">
@@ -117,13 +117,13 @@
                             <div class="row mb-3">
                                 <div class="col-12">
                                     <label for="attrInput" class="form-label">Atribuições:</label>
-                                    <textarea class="form-control" id="attrInput" rows="3" placeholder="..."></textarea>
+                                    <textarea class="form-control" name="attrInput" id="attrInput" rows="3" placeholder="..."></textarea>
                                 </div>
                             </div>
                         </section>
                         <div class="row">
                             <div class="col-12">
-                                <input id="btnAddExp" class="btn btn-secondary" type="button" value="Adicionar outra experiência">
+                                <input id="btnAddExp" name="btnAddExp" class="btn btn-secondary" type="button" value="Adicionar outra experiência">
                             </div>
                         </div>
                     </div>
@@ -140,17 +140,17 @@
                             <div class="row mb-3">
                                 <div class="col-6">
                                     <label for="gradInput" class="form-label">Graduação:</label>
-                                    <input type="text" class="form-control" id="gradInput">
+                                    <input type="text" class="form-control" name="gradInput" id="gradInput">
                                 </div>
                                 <div class="col-6">
                                     <label for="uniInput" class="form-label">Instituição:</label>
-                                    <input type="text" class="form-control" id="uniInput">
+                                    <input type="text" class="form-control" name="uniInput" id="uniInput">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-4">
                                     <label for="levelInput" class="form-label">Nível:</label>
-                                    <select class="form-select" id="levelInput">
+                                    <select class="form-select" name="levelInput" id="levelInput">
                                         <option selected value="1">Selecione...</option>
                                         <option value="2">Fundamental</option>
                                         <option value="3">Médio</option>
@@ -159,24 +159,24 @@
                                 </div>
                                 <div class="col-4">
                                     <label for="startGradDateInput" class="form-label">Data Inicial:</label>
-                                    <input type="date" class="form-control" id="startGradDateInput">
+                                    <input type="date" class="form-control" name="startGradDateInput" id="startGradDateInput">
                                 </div>
                                 <div class="col-4">
                                     <label for="endGradDateInput" class="form-label">Data Final:</label>
-                                    <input type="date" class="form-control" id="endGradDateInput">
+                                    <input type="date" class="form-control" name="endGradDateInput" id="endGradDateInput">
                                 </div>
                             </div>
                         </section>
                         <div class="row">
                             <div class="col-12">
-                                <input id="btnAddExpAcad" class="btn btn-secondary" type="button" value="Adicionar outra formação">
+                                <input id="btnAddExpAcad" name="btnAddExpAcad" class="btn btn-secondary" type="button" value="Adicionar outra formação">
                             </div>
                         </div>
                     </div>
                 </div>
                 <!---------------------------->
 
-                <input id="btnSubmit" class="btn btn-success mt-3 mb-3" type="submit" value="Gerar Currículo">
+                <input id="btnSubmit" name="btnSubmit" class="btn btn-success mt-3 mb-3" type="submit" value="Gerar Currículo">
 
             </form>
         </div>
