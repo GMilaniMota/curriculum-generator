@@ -19,7 +19,7 @@ class Resume {
     public Address $endereco;
     public array $exeperiencias = [];
     public array $graduacoes = [];
-    public $image;
+    public $picture;
 
     public function __construct($data){
         foreach($data as $key => $field) {

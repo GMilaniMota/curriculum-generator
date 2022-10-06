@@ -21,8 +21,7 @@
         </div>
 
         <div class="row">
-            <form action="src/controllers/ResumeController.php?action=index" method="post" enctype='multipart/form-data'>
-                
+            <form action="src/controllers/ResumeController.php?action=index" method="post" enctype="multipart/form-data">
                 <!--INFORMAÇÕES BÁSICAS CARD-->
                 <div class="card">
                     <div class="card-header">
@@ -68,7 +67,7 @@
                         <div class="row mb-3">
                             <div class="col-12">
                                 <label for="picInput" class="form-label">Adicione uma foto:</label>
-                                <input class="form-control" type="file" name="picure" id="picInput">
+                                <input class="form-control" type="file" name="picture" id="picInput">
                             </div>
                         </div>
                         <div class="row mb-3">
