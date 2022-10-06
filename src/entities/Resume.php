@@ -1,21 +1,25 @@
 <?php 
 namespace Entities;
+
+use stdClass;
+
 require('../entities/Experience.php');
 require('../entities/Graduation.php');
-
+require('../entities/Address.php');
 enum Sex {
 
 }
 
 class Resume {
-    public string $nome;
-    public string $email;
-    public string $dataNasc;
-    public string $telefone;
-    public string $sobre;
+    public string $nome = "";
+    public string $email = "";
+    public string $dataNasc = "";
+    public string $telefone = "";
+    public string $sobre = "";
     public Address $endereco;
     public array $exeperiencias = [];
     public array $graduacoes = [];
+    public $image;
 
     public function __construct($data){
         foreach($data as $key => $field) {
@@ -30,9 +34,16 @@ class Resume {
                     $ocupacaoClass = new Experience($ocupacao);
                     array_push($this->exeperiencias, $ocupacaoClass);
                 }
-            } else {
+            } 
+            if (str_contains($key, 'endereco')) {
+
+            }
+            else {
                 $this->{$key} = $field; 
             }
+        }
+        if (!isset($this->address)) {
+            $this->address = new Address();
         }
     }
 
