@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;}
+    font-family: 'Poppins','Roboto',sans-serif;}
 
 body{
     background: lightblue;
@@ -188,6 +188,7 @@ p{
     text-transform: uppercase;
     color: #848c90;
     font-weight: 600;
+    boder: 1px solid black;
 }
 
 .about .box .text .cargo{
@@ -197,19 +198,10 @@ p{
     font-size: 16px;
 }
 
-/*.about .box .text span{
-    text-transform: uppercase;
-    color: #03a9f4;
-    font-size: 16px;
-}*/
 
 .skills .box{
     position: relative;
     width: 100%;
-    /* display: grid; */
-    /* grid-template-columns: 150px 1fr; */
-    /* justify-content:center; */
-    /* align-items:center; */
 }
 
 .skills .box p span{
