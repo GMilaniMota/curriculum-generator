@@ -21,7 +21,7 @@
         </div>
 
         <div class="row">
-            <form action="src/controllers/ResumeController.php?action=index" method="post">
+            <form action="src/controllers/ResumeController.php?action=index" method="post" enctype='multipart/form-data'>
                 
                 <!--INFORMAÇÕES BÁSICAS CARD-->
                 <div class="card">
@@ -40,7 +40,7 @@
                             </div>
                             <div class="col-2">
                                 <label for="dateInput" class="form-label">Data de Nascimento:</label>
-                                <input type="date" class="form-control" name="dateInput" id="dateInput">
+                                <input type="date" class="form-control" name="data_nascimento" id="dateInput">
                             </div>
                             <div class="col-2">
                                 <label for="telInput" class="form-label">Telefone:</label>
@@ -50,25 +50,25 @@
                         <div class="row mb-3">
                             <div class="col-5">
                                 <label for="addressInput" class="form-label">Endereço:</label>
-                                <input type="text" class="form-control" name="addressInput" id="addressInput" placeholder="Rua das Flores">
+                                <input type="text" class="form-control" name="endereco[endereco]" id="addressInput" placeholder="Rua das Flores">
                             </div>
                             <div class="col-4">
                                 <label for="adress2Input" class="form-label">Complemento:</label>
-                                <input type="text" class="form-control" name="adress2Input" id="adress2Input">
+                                <input type="text" class="form-control" name="endereco[complemento]" id="adress2Input">
                             </div>
                             <div class="col-1">
                                 <label for="numberInput" class="form-label">Número:</label>
-                                <input type="text" class="form-control" name="numberInput" id="numberInput" maxlength="4" placeholder="1234">
+                                <input type="text" class="form-control" name="endereco[numero]" id="numberInput" maxlength="4" placeholder="1234">
                             </div>
                             <div class="col-2">
                                 <label for="cepInput" class="form-label">CEP:</label>
-                                <input type="text" class="form-control" name="cepInput" id="cepInput" maxlength="8" placeholder="12345-678">
+                                <input type="text" class="form-control" name="endereco[cep]" id="cepInput" maxlength="8" placeholder="12345-678">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-12">
                                 <label for="picInput" class="form-label">Adicione uma foto:</label>
-                                <input class="form-control" type="file" name="picInput" id="picInput">
+                                <input class="form-control" type="file" name="picure" id="picInput">
                             </div>
                         </div>
                         <div class="row mb-3">
