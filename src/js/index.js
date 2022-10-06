@@ -40,11 +40,11 @@ $(document).ready(function(){
                 <div class="row mb-3">
                     <div class="col-6">
                         <label for="startDateInput${expElemIds}" class="form-label">Data Inicial:</label>
-                        <input type="date" class="form-control" name="ocupacao[${expElemIds}][datainicial]" id="startDateInput${expElemIds}">
+                        <input type="date" class="form-control" name="ocupacao[${expElemIds}][data_inicial]" id="startDateInput${expElemIds}">
                     </div>
                     <div class="col-6">
                         <label for="endDateInput${expElemIds}" class="form-label">Data Final:</label>
-                        <input type="date" class="form-control" name="ocupacao[${expElemIds}][datafinal]" id="endDateInput${expElemIds}">
+                        <input type="date" class="form-control" name="ocupacao[${expElemIds}][data_final]" id="endDateInput${expElemIds}">
                     </div>
                 </div>
                 <div class="row mb-3 ms-2">
@@ -94,11 +94,11 @@ $(document).ready(function(){
                     </div>
                     <div class="col-4">
                         <label for="startGradDateInput${acadElemIds}" class="form-label">Data Inicial:</label>
-                        <input type="date" class="form-control" name="graduacao[${acadElemIds}][datainicial]" id="startGradDateInput${acadElemIds}">
+                        <input type="date" class="form-control" name="graduacao[${acadElemIds}][data_inicial]" id="startGradDateInput${acadElemIds}">
                     </div>
                     <div class="col-4">
                         <label for="endGradDateInput${acadElemIds}" class="form-label">Data Final:</label>
-                        <input type="date" class="form-control" name="graduacao[${acadElemIds}][datafinal]" id="endGradDateInput${acadElemIds}">
+                        <input type="date" class="form-control" name="graduacao[${acadElemIds}][data_final]" id="endGradDateInput${acadElemIds}">
                     </div>
                 </div>
             </section>
