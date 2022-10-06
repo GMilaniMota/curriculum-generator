@@ -19,7 +19,7 @@ body{
     max-width: 1000px;
     min-height: 1000px;
     background: #fff;
-    margin: 50px;
+    margin: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
@@ -220,3 +220,13 @@ p{
 
 
 /* Fim do style da parte direita. */
+
+.download {
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color:#003147;
+    color: #fff;
+    border-radius:10px;
+    font-size: 20px;
+}
