@@ -6,7 +6,7 @@ use Entities\Resume;
 use Views\ResumeView;
 
 $data = $_POST;
-if (!move_uploaded_file($_FILES["picture"]["tmp_name"], '../../public/uploads'.$_FILES["picture"]["name"])) {
+if (!move_uploaded_file($_FILES["picture"]["tmp_name"], '../../public/uploads/'.$_FILES["picture"]["name"])) {
     return false;
 }
 $data["picture"] = $_FILES["picture"]["name"];

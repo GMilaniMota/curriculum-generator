@@ -23,7 +23,7 @@
             <div class="left-Side"> <!-- Abre div lado esquerdo. -->
                 <div class="profileText">
                     <div class="imgBx">
-                        <img src="<?php echo "/public/uploads$data->picture" ?>" width="300" height="250" width="180">
+                        <img src="<?php echo "/public/uploads/$data->picture" ?>" width="300" height="250" width="180">
                     </div>
                     <h2><?php echo $data->nome ?><br><span><?php echo $data->email ?></span></h2>
                 </div>
