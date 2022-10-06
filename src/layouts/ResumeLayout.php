@@ -43,21 +43,6 @@
                             </span>
                             <span class="text"> <?php echo $data->email;?></span>
                         </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i>
-                            </span>
-                            <span class="text">vitorbelo.github.io/Portfolio-VitorBelo/</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </span>
-                            <span class="text">linkedin.com/in/vitor-belo</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-github" aria-hidden="true"></i>
-                            </span>
-                            <span class="text">github.com/vitorbelo</span>
-                        </li>
                     </ul>
                 </div>
 
@@ -68,9 +53,12 @@
                 <div class="contactInfo education">
                     <h3 class="title">Formação acadêmica:</h3>
                     <ul>
-                        <?php foreach($data->graduacoes as $graduacao) { ?>
+                        <?php foreach($data->graduacoes as $graduacao) { 
+                                $dt_ini = date_create($graduacao->data_inicial);
+                                $dt_fim = date_create($graduacao->data_final);
+                        ?>
                         <li>
-                            <h5><?php echo $graduacao->data_inicial . ' - '. $graduacao->data_final ?></h5>
+                            <h5><?php echo date_format($dt_ini, 'd/m/Y') . ' - '. date_format($dt_fim, 'd/m/Y'); ?></h5>
                             <h4><?php echo $graduacao->nome?></h4>
                             <h4><?php echo $graducao->instituicao?></h4>
                         </li>
@@ -98,18 +86,22 @@
                     </p>
                 </div>
                 <div class="about">
-                    <h2 class="title2">Experiências profissionais</h2>
+                    <h2 class="title2">Experiências Profissionais</h2>
                     <div class="box">
-                        <?php foreach($data->exeperiencias as $experiencia) ?>
+                        <?php foreach($data->exeperiencias as $experiencia) {
+                                $dt_ini = date_create($experiencia->data_inicial);
+                                $dt_fim = date_create($experiencia->data_final);
+                        ?>
                         <div class="tempo">
-                            <h5><?php echo $experiencia->data_inicial . ' - ' . $experiencia->data_final ?></h5>
-                            <h5><?php echo $experiencia->empresa ?></h5>
+                            <h5><?php echo date_format($dt_ini, 'd/m/Y') . ' - '. date_format($dt_fim, 'd/m/Y'); ?></h5>
                         </div>
                         <div class="text">
-                            <h4><?php echo $experiencia->cargo ?></h4>
-                            <p> <?php echo $experiencia->atribuicoes ?>
-                            </p>
+                            <span class="cargo"><?php echo $experiencia->cargo ?></span>
+                            <span >-</span>
+                            <span class="empresa"><?php echo $experiencia->empresa ?></span>
+                            <p> <?php echo $experiencia->atribuicoes ?></p>
                         </div>
+                        <?php }?>
                     </div>
                 </div>
 
