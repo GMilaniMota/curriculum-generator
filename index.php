@@ -116,7 +116,7 @@
                             <div class="row mb-3">
                                 <div class="col-12">
                                     <label for="attrInput" class="form-label">Atribuições:</label>
-                                    <textarea class="form-control" name="ocupacao[0][atribuicao]" id="attrInput" rows="3" placeholder="..."></textarea>
+                                    <textarea class="form-control" name="ocupacao[0][atribuicoes]" id="attrInput" rows="3" placeholder="..."></textarea>
                                 </div>
                             </div>
                         </section>

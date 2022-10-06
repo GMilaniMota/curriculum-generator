@@ -56,7 +56,7 @@ $(document).ready(function(){
                 <div class="row mb-3">
                     <div class="col-12">
                         <label for="attrInput${expElemIds}" class="form-label">Atribuições:</label>
-                        <textarea class="form-control" name="ocupacao[${expElemIds}][atribuicao]" id="attrInput${expElemIds}" rows="3" placeholder="..."></textarea>
+                        <textarea class="form-control" name="ocupacao[${expElemIds}][atribuicoes]" id="attrInput${expElemIds}" rows="3" placeholder="..."></textarea>
                     </div>
                 </div>
             </section>
